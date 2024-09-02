@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Issa-WebDev</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body
+    class="bg-gradient-to-l from-teal-900 to-teal-950 dark:bg-gradient-to-l dark:from-gray-900 dark:to-gray-950 text-white font-roboto pb-[100px] min-h-screen"
+  >
+    <!-- Start Of Navbar -->
+    <nav
+      id="nav"
+      class="fixed top-0 right-0 left-0 flex items-center justify-between pt-5 pb-4 px-[20%] bg-gradient-to-l from-teal-900 to-teal-950 z-10"
+    >
+      <h1 class="text-[1.2rem] font-bold">Issa-WebDev</h1>
+      <ul
+        class="flex items-center justify-center px-7 py-2 gap-5 bg-teal-800 rounded-[20px]"
+      >
+        <li
+          class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+        >
+          <a href=""><img src="icons/x.svg" alt="x icon" /></a>
+        </li>
+        <li
+          class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+        >
+          <a href=""><img src="icons/github.svg" alt="github icon" /></a>
+        </li>
+        <li
+          class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+        >
+          <a href=""><img src="icons/linkedin.svg" alt="linkedin icon" /></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End Of Navbar -->
+
+    <!-- Start Of Header -->
+    <header class="grid grid-cols-2 px-[20%] pt-[150px]">
+      <div class="about-me flex flex-col space-y-[30px]">
+        <div class="flex items-center">
+          <div class="profil w-[150px] h-[150px] overflow-hidden rounded-full">
+            <img src="images/profil.jpg" class="w-full" alt="Issa-WebDev" />
+          </div>
+          <h1 class="name font-bold text-[1.6rem] pl-[40px]">Kone Issa 👇🏻</h1>
+        </div>
+        <p class="job text-[2rem] italic font-bold">
+          Junior Frontend Developer
+        </p>
+        <p class="leading-7 w-[400px]">
+          Creative and passionate Frontend developer, I design elegant,
+          responsive, and interactive websites using HTML, CSS, Javascript, and
+          Tailwind CSS to deliver an optimal user experience.
+        </p>
+        <ul
+          class="flex items-center justify-center px-7 py-2 gap-5 bg-teal-800 rounded-[20px] w-[300px]"
+        >
+          <li
+            class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+          >
+            <a href=""><img src="icons/x.svg" alt="x icon" /></a>
+          </li>
+          <li
+            class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+          >
+            <a href=""><img src="icons/github.svg" alt="github icon" /></a>
+          </li>
+          <li
+            class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+          >
+            <a href=""><img src="icons/linkedin.svg" alt="linkedin icon" /></a>
+          </li>
+          <li
+            class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+          >
+            <a href="mailto:issawebdev@gmail.com"
+              ><img src="icons/email.svg" alt="email icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="astro w-[500px]">
+        <img
+          src="images/astro.png"
+          class="w-full animate-pulse"
+          alt="astro image"
+        />
+      </div>
+    </header>
+    <!-- End Of Header -->
+
+    <!-- Start Projects Section -->
+    <section class="projects-section px-[20%] pt-[60px]">
+      <h1 class="text-[2rem] font-[600] text-right">Projects</h1>
+      <p class="w-[520px] pt-[50px] leading-7">
+        Here are some projects I've worked on, shwocasing my ability to design
+        and develop modern, resposive websites using the latest Frontend
+        technologies.
+      </p>
+      <!-- Projects Crousel 👇🏻 -->
+      <div
+        class="container flex items-center justify-center pt-[70px] gap-[30px]"
+      >
+        <button id="prev" class="btn-control">&#10094;</button>
+        <div
+          class="container w-[500px] overflow-hidden rounded-[20px] border-[2px] border-white cursor-pointer"
+        >
+          <div
+            id="carousel"
+            class="flex transition-transform duration-500 ease-in-out"
+          >
+            <div class="carousel-item group relative min-w-[100%]">
+              <img
+                src="images/project_1.jpg"
+                class="grayscale-[100%] blur[25px]"
+                alt="cool"
+              />
+              <div
+                class="info flex flex-col items-center justify-center absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-teal-700 translate-y-[100%] group-hover:translate-y-[0] transition-transform duration-500 ease-in-out"
+              >
+                <h1 class="text-[1.5rem] font-bold pb-[20px]">
+                  Title Of Projects
+                </h1>
+                <p class="w-[350px] text-center">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nihil, reiciendis ad sint laborum provident dolorum. Obcaecati
+                  reprehenderit quia beatae neque omnis, hic quaerat odit
+                  eveniet, harum nostrum est consectetur numquam?
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item min-w-[100%]">
+              <img src="images/project_2.jpg" alt="cool" />
+            </div>
+            <div class="carousel-item min-w-[100%]">
+              <img src="images/project_3.jpg" alt="cool" />
+            </div>
+          </div>
+        </div>
+        <button id="next" class="btn-control">&#10095;</button>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+  </body>
+</html>
