@@ -447,9 +447,9 @@ video {
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
 
-  src: url('/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url("/fonts/Roboto-Regular.ttf") format("ttf");
 
   font-weight: normal;
 
@@ -1068,6 +1068,25 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Modification de la largeur du scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Modification du poignés de scroll */
+
+::-webkit-scrollbar-thumb {
+  background-color: teal;
+  border-radius: 20px;
+}
+
+/* Modification de la couleur du scrollbar */
+
+::-webkit-scrollbar-track {
+  background: rgb(13, 71, 71);
 }
 
 .hover\:scale-110:hover {
