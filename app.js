@@ -5,6 +5,7 @@ const items = document.querySelectorAll(".carousel-item");
 
 let currentIndex = 0;
 
+// Go to previous Projects
 prevBtn.addEventListener("click", () => {
   if (currentIndex > 0) {
     currentIndex--;
@@ -12,6 +13,7 @@ prevBtn.addEventListener("click", () => {
   }
 });
 
+// Go to next Projects
 nextBtn.addEventListener("click", () => {
   if (currentIndex < items.length - 1) {
     currentIndex++;
@@ -19,6 +21,7 @@ nextBtn.addEventListener("click", () => {
   }
 });
 
+// To Update Projects
 function ChangeCarousel() {
   carousel.style.transform = `translateX(${-currentIndex * 100}%)`;
 }

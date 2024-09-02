@@ -8,49 +8,53 @@
     <script src="app.js" defer></script>
   </head>
   <body
-    class="bg-gradient-to-l from-teal-900 to-teal-950 dark:bg-gradient-to-l dark:from-gray-900 dark:to-gray-950 text-white font-roboto pb-[100px] min-h-screen"
+    class="bg-gradient-to-l from-teal-900 to-teal-950 dark:bg-gradient-to-l dark:from-gray-900 dark:to-gray-950 text-white font-roboto pb-[50px] min-h-screen"
   >
     <!-- Start Of Navbar -->
     <nav
       id="nav"
-      class="fixed top-0 right-0 left-0 flex items-center justify-between pt-5 pb-4 px-[20%] bg-gradient-to-l from-teal-900 to-teal-950 z-10"
+      class="fixed top-0 right-0 left-0 flex items-center justify-between pt-5 pb-4 px-[10%] lg:px-[20%] bg-gradient-to-l from-teal-900 to-teal-950 z-10"
     >
-      <h1 class="text-[1.2rem] font-bold">Issa-WebDev</h1>
+      <h1 class="text-[1rem] md:text-[1.2rem] font-bold">Issa-WebDev</h1>
       <ul
         class="flex items-center justify-center px-7 py-2 gap-5 bg-teal-800 rounded-[20px]"
       >
         <li
           class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
         >
-          <a href=""><img src="icons/x.svg" alt="x icon" /></a>
+          <a href="https://twitter.com/Issa_WebDev"><img src="icons/x.svg" alt="x icon" /></a>
         </li>
         <li
           class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
         >
-          <a href=""><img src="icons/github.svg" alt="github icon" /></a>
+          <a href="https://github.com/Issa-WebDev"><img src="icons/github.svg" alt="github icon" /></a>
         </li>
         <li
           class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
         >
-          <a href=""><img src="icons/linkedin.svg" alt="linkedin icon" /></a>
+          <a href="https://www.linkedin.com/in/Issa-WebDev"><img src="icons/linkedin.svg" alt="linkedin icon" /></a>
         </li>
       </ul>
     </nav>
     <!-- End Of Navbar -->
 
     <!-- Start Of Header -->
-    <header class="grid grid-cols-2 px-[20%] pt-[150px]">
+    <header class="flex flex-col xl:flex-row px-[10%] lg:px-[20%] pt-[150px]">
       <div class="about-me flex flex-col space-y-[30px]">
-        <div class="flex items-center">
-          <div class="profil w-[150px] h-[150px] overflow-hidden rounded-full">
+        <div class="flex items-center xl:pt-[50px]">
+          <div class="profil w-[110px] h-[110px] overflow-hidden rounded-full">
             <img src="images/profil.jpg" class="w-full" alt="Issa-WebDev" />
           </div>
-          <h1 class="name font-bold text-[1.6rem] pl-[40px]">Kone Issa 👇🏻</h1>
+          <h1
+            class="name font-bold text-[1.2rem] md:text-[1.6rem] pl-[20px] md:pl-[40px]"
+          >
+            Kone Issa 👇🏻
+          </h1>
         </div>
-        <p class="job text-[2rem] italic font-bold">
+        <p class="job text-[1.2rem] md:text-[1.6rem] italic font-bold">
           Junior Frontend Developer
         </p>
-        <p class="leading-7 w-[400px]">
+        <p class="leading-7 w-[100%] xl:w-[400px] text-[0.9rem] md:text-[1rem]">
           Creative and passionate Frontend developer, I design elegant,
           responsive, and interactive websites using HTML, CSS, Javascript, and
           Tailwind CSS to deliver an optimal user experience.
@@ -61,17 +65,17 @@
           <li
             class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
           >
-            <a href=""><img src="icons/x.svg" alt="x icon" /></a>
+            <a href="https://twitter.com/Issa_WebDev"><img src="icons/x.svg" alt="x icon" /></a>
           </li>
           <li
             class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
           >
-            <a href=""><img src="icons/github.svg" alt="github icon" /></a>
+            <a href="https://github.com/Issa-WebDev"><img src="icons/github.svg" alt="github icon" /></a>
           </li>
           <li
             class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
           >
-            <a href=""><img src="icons/linkedin.svg" alt="linkedin icon" /></a>
+            <a href="https://www.linkedin.com/in/Issa_WebDev"><img src="icons/linkedin.svg" alt="linkedin icon" /></a>
           </li>
           <li
             class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
@@ -82,7 +86,9 @@
           </li>
         </ul>
       </div>
-      <div class="astro w-[500px]">
+      <div
+        class="astro w-[100%] xl:w-[500px] pt-[40px] xl:pt-[0] flex items-center justify-center"
+      >
         <img
           src="images/astro.png"
           class="w-full animate-pulse"
@@ -93,56 +99,251 @@
     <!-- End Of Header -->
 
     <!-- Start Projects Section -->
-    <section class="projects-section px-[20%] pt-[60px]">
-      <h1 class="text-[2rem] font-[600] text-right">Projects</h1>
-      <p class="w-[520px] pt-[50px] leading-7">
+    <section class="projects-section px-[10%] lg:px-[20%] pt-[60px]">
+      <h1 class="text-[2rem] font-[600] text-right">Projects 👇🏻</h1>
+      <p
+        class="w-[100%px] xl:w-[70%] pt-[50px] text-[0.9rem] md:text-[1rem] leading-7"
+      >
         Here are some projects I've worked on, shwocasing my ability to design
         and develop modern, resposive websites using the latest Frontend
         technologies.
       </p>
       <!-- Projects Crousel 👇🏻 -->
-      <div
-        class="container flex items-center justify-center pt-[70px] gap-[30px]"
-      >
-        <button id="prev" class="btn-control">&#10094;</button>
+      <div class="container w-full flex items-center justify-center pt-[70px]">
+        <button id="prev" class="btn-control mr-[20px]">&#10094;</button>
         <div
-          class="container w-[500px] overflow-hidden rounded-[20px] border-[2px] border-white cursor-pointer"
+          class="carousel-container w-[350px] sm:w-[400px] overflow-hidden rounded-[20px] border-[2px] border-gray-200 cursor-pointer shadow-2xl shadow-teal-700"
         >
           <div
             id="carousel"
             class="flex transition-transform duration-500 ease-in-out"
           >
-            <div class="carousel-item group relative min-w-[100%]">
+            <div class="carousel-item min-w-[100%]">
               <img
-                src="images/project_1.jpg"
-                class="grayscale-[100%] blur[25px]"
+                src="images/img3.jpg"
+                class="w-full grayscale-[25%]"
                 alt="cool"
               />
               <div
-                class="info flex flex-col items-center justify-center absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-teal-700 translate-y-[100%] group-hover:translate-y-[0] transition-transform duration-500 ease-in-out"
+                class="info flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)] py-[20px] px-[30px]"
               >
-                <h1 class="text-[1.5rem] font-bold pb-[20px]">
+                <h1 class="text-[1.3rem] font-bold pb-[20px]">
                   Title Of Projects
                 </h1>
-                <p class="w-[350px] text-center">
+                <p class="text-center text-[0.9rem] font-normal pb-[20px]">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Nihil, reiciendis ad sint laborum provident dolorum. Obcaecati
-                  reprehenderit quia beatae neque omnis, hic quaerat odit
-                  eveniet, harum nostrum est consectetur numquam?
+                  Nihil, reiciendis ad sint laborum provident dolorum Obcaecati?
                 </p>
+                <div class="flex w-full justify-between py-[10px]">
+                  <a href=""><button class="btn">Visit</button></a>
+                  <a href=""><button class="btn">Code</button></a>
+                </div>
               </div>
             </div>
             <div class="carousel-item min-w-[100%]">
-              <img src="images/project_2.jpg" alt="cool" />
+              <img
+                src="images/img1.jpg"
+                class="w-full grayscale-[25%]"
+                alt="cool"
+              />
+              <div
+                class="info flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)] py-[20px] px-[30px]"
+              >
+                <h1 class="text-[1.3rem] font-bold pb-[20px]">
+                  Title Of Projects
+                </h1>
+                <p class="text-center text-[0.9rem] font-normal pb-[20px]">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nihil, reiciendis ad sint laborum provident dolorum Obcaecati?
+                </p>
+                <div class="flex w-full justify-between py-[10px]">
+                  <a href=""><button class="btn">Open</button></a>
+                  <a href=""><button class="btn">Code</button></a>
+                </div>
+              </div>
             </div>
             <div class="carousel-item min-w-[100%]">
-              <img src="images/project_3.jpg" alt="cool" />
+              <img
+                src="images/img3.jpg"
+                class="w-full grayscale-[25%]"
+                alt="cool"
+              />
+              <div
+                class="info flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)] py-[20px] px-[30px]"
+              >
+                <h1 class="text-[1.3rem] font-bold pb-[20px]">
+                  Title Of Projects
+                </h1>
+                <p class="text-center text-[0.9rem] font-normal pb-[20px]">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nihil, reiciendis ad sint laborum provident dolorum Obcaecati?
+                </p>
+                <div class="flex w-full justify-between py-[10px]">
+                  <a href=""><button class="btn">Open</button></a>
+                  <a href=""><button class="btn">Code</button></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <button id="next" class="btn-control">&#10095;</button>
+        <button id="next" class="btn-control ml-[20px]">&#10095;</button>
       </div>
     </section>
     <!-- End Projects Section -->
+
+    <!-- Start Skills Section -->
+    <section class="skills-section px-[10%] lg:px-[20%] pt-[100px]">
+      <h1 class="text-[2rem] font-[600] text-left">My Skills 👇🏻</h1>
+      <p
+        class="w-[100%px] xl:w-[70%] pt-[30px] text-[0.9rem] md:text-[1rem] leading-7"
+      >
+        Here is an overview of the technologies I have mastered and I keep
+        learning.
+      </p>
+      <div
+        class="skills grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[15px] py-[40px]"
+      >
+        <div class="cards">
+          <div>
+            <img
+              src="icons/html.png"
+              class="h-[100px] w-full pb-[10px]"
+              alt="html icons"
+            />
+          </div>
+          <h1 class="text-left w-full pb-[10px] font-bold">HTML</h1>
+          <p class="w-full text-[0.9rem]">
+            Creating well-structured and semantic web pages with clean HTML
+            code.
+          </p>
+        </div>
+        <div class="cards">
+          <div>
+            <img
+              src="icons/css.png"
+              class="h-[100px] w-full pb-[10px]"
+              alt="css icons"
+            />
+          </div>
+          <h1 class="text-left w-full pb-[10px] font-bold">CSS</h1>
+          <p class="w-full text-[0.9rem]">
+            Designing responsive and visually appealing styles with CSS.
+          </p>
+        </div>
+        <div class="cards">
+          <div>
+            <img
+              src="icons/js.png"
+              class="h-[100px] w-full pb-[10px]"
+              alt="js icons"
+            />
+          </div>
+          <h1 class="text-left w-full pb-[10px] font-bold">JavaScript</h1>
+          <p class="w-full text-[0.9rem]">
+            Intermediate skills in JavaScript, Developing dynamic and
+            interactive web applications.
+          </p>
+        </div>
+        <div class="cards">
+          <div>
+            <img
+              src="icons/tailwindcss-icon.svg"
+              text-[0.9rem]
+              class="h-[80px] w-full pb-[10px]"
+              alt="tailwindcss-icon icons"
+            />
+          </div>
+          <h1 class="text-left w-full pb-[10px] font-bold">Tailwind CSS</h1>
+          <p class="w-full text-[0.9rem]">
+            Rapid developmznt of modern and responsive interface with Tailwind
+            CSS.
+          </p>
+        </div>
+        <div class="cards md:col-span-2">
+          <div class="flex gap-[50px]">
+            <img
+              src="icons/git.svg"
+              class="h-[100px] w-full pb-[10px]"
+              alt="git icons"
+            />
+            <img
+              src="icons/github.svg"
+              class="h-[100px] w-full pb-[10px]"
+              alt="github.svg icons"
+            />
+          </div>
+          <h1 class="text-left w-full pb-[10px] font-bold">Git & Github</h1>
+          <p class="w-full text-[0.9rem]">
+            Basic knowledge of version control with Git and Github for project
+            collaboration.
+          </p>
+        </div>
+      </div>
+      <!-- Upcomming Skills -->
+      <section
+        class="w-full flex flex-col items-center justify-center py-[60px]"
+      >
+        <h1 class="text-[2rem] italic font-[600] text-center">
+          Upcomming🔥...
+        </h1>
+        <p
+          class="w-[100%px] xl:w-[70%] pt-[30px] text-[0.9rem] md:text-[1rem] leading-7"
+        >
+          Planning to start learning React.js to build interactive and scalable
+          web applications.
+        </p>
+
+        <div class="w-[200px] pt-[60px]">
+          <img
+            src="icons/react.svg"
+            class="w-full animate-spin"
+            alt="react icon"
+          />
+        </div>
+      </section>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- Start Of Contact -->
+    <section class="px-[10%] lg:px-[20%]">
+      <h1 class="text-[1.7rem] font-[600]">Join me 👇🏻</h1>
+      <p
+        class="w-[100%px] xl:w-[70%] pt-[20px] text-[0.9rem] md:text-[1rem] leading-7 pb-[30px]"
+      >
+        I'm always open to connecting and chating! Fell free to reach out to me
+        through any of my social media profiles below.
+      </p>
+      <ul
+        class="flex items-center justify-center px-7 py-2 gap-5 bg-teal-800 rounded-[20px] w-[300px]"
+      >
+        <li
+          class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+        >
+          <a href="https://twitter.com/Issa_WebDev"><img src="icons/x.svg" alt="x icon" /></a>
+        </li>
+        <li
+          class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+        >
+          <a href="https://github.com/Issa-WebDev"><img src="icons/github.svg" alt="github icon" /></a>
+        </li>
+        <li
+          class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+        >
+          <a href="https://www.linkedin.com/in/Issa_WebDev"><img src="icons/linkedin.svg" alt="linkedin icon" /></a>
+        </li>
+        <li
+          class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+        >
+          <a href="mailto:issawebdev@gmail.com"
+            ><img src="icons/email.svg" alt="email icon"
+          /></a>
+        </li>
+      </ul>
+
+      <footer class="pt-[50px]">
+        <p class="font-light text-[0.9rem]">Copyright &copy; 2024 | build and designed by Issa-WebDev</p>
+      </footer>
+    </section>
+    <!-- End Of Contact -->
   </body>
 </html>
