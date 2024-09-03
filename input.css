@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-1: teal;
+  --bg-2:  rgb(13, 71, 71);
+}
+
+.dark-mode {
+  --bg-1: rgb(27, 53, 53);
+  --bg-2: rgb(7, 16, 48);
+}
+
 /* Modification de la largeur du scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -9,13 +19,13 @@
 
 /* Modification du poignés de scroll */
 ::-webkit-scrollbar-thumb {
-  background-color: teal;
+  background-color: var(--bg-1);
   border-radius: 20px;
 }
 
 /* Modification de la couleur du scrollbar */
 ::-webkit-scrollbar-track {
-  background: rgb(13, 71, 71);
+  background: var(--bg-2);
 }
 
 @layer base {
@@ -29,18 +39,19 @@
 
 @layer components {
   .btn-control {
-    @apply w-[25px] h-[25px] rounded-full bg-teal-300 text-black font-bold  flex items-center justify-center;
+    @apply w-[25px] h-[25px] rounded-full bg-teal-500 dark:bg-gray-800 dark:text-white text-black font-bold  flex items-center justify-center;
   }
 }
 
 @layer components {
   .btn {
-    @apply bg-teal-700 px-[18px] py-[5px] text-white rounded-md hover:bg-teal-800 transition-colors text-[0.8rem] duration-500 ease-in-out;
+    @apply bg-teal-700 px-[18px] py-[5px] text-white rounded-md hover:bg-teal-800 dark:bg-gray-700 dark:hover:bg-gray-800 transition-colors text-[0.8rem] duration-500 ease-in-out;
   }
 }
 
 @layer components {
   .cards {
-    @apply flex flex-col items-center justify-center rounded-md bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)] border-[1px] border-white p-[20px];
+    @apply flex flex-col items-center justify-center rounded-md bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)]
+    dark:bg-gradient-to-b dark:from-[rgba(0,0,0,0.2)] dark:via-gray-800 dark:to-[rgba(0,0,0,0.2)] border-[1px] border-white p-[20px];
   }
 }

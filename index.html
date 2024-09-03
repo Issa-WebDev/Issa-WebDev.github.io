@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Issa-WebDev</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="fav icon" href="logo/issa-WebDev.png" />
     <script src="app.js" defer></script>
   </head>
   <body
@@ -13,28 +14,56 @@
     <!-- Start Of Navbar -->
     <nav
       id="nav"
-      class="fixed top-0 right-0 left-0 flex items-center justify-between pt-5 pb-4 px-[10%] lg:px-[20%] bg-gradient-to-l from-teal-900 to-teal-950 z-10"
+      class="fixed top-0 right-0 left-0 flex items-center justify-between pt-5 pb-4 px-[10%] lg:px-[20%] bg-gradient-to-l from-teal-900 to-teal-950 dark:bg-gradient-to-l dark:from-gray-900 dark:to-gray-950 z-10"
     >
-      <h1 class="text-[1rem] md:text-[1.2rem] font-bold">Issa-WebDev</h1>
-      <ul
-        class="flex items-center justify-center px-7 py-2 gap-5 bg-teal-800 rounded-[20px]"
-      >
-        <li
-          class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+      <div class="md:w-[60px] md:h-[60px] w-[50px] h-[50px]">
+        <img src="logo/issa-WebDev.png" class="w-full" alt="logo" />
+      </div>
+      <div class="flex gap-3 items-center justify-center">
+        <ul
+          class="flex items-center justify-center px-7 py-2 gap-5 bg-teal-800 dark:bg-gray-700 rounded-[20px]"
         >
-          <a href="https://twitter.com/Issa_WebDev"><img src="icons/x.svg" alt="x icon" /></a>
-        </li>
-        <li
-          class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
-        >
-          <a href="https://github.com/Issa-WebDev"><img src="icons/github.svg" alt="github icon" /></a>
-        </li>
-        <li
-          class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
-        >
-          <a href="https://www.linkedin.com/in/Issa-WebDev"><img src="icons/linkedin.svg" alt="linkedin icon" /></a>
-        </li>
-      </ul>
+          <li
+            class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+          >
+            <a href="https://twitter.com/Issa_WebDev"
+              ><img src="icons/x.svg" alt="x icon"
+            /></a>
+          </li>
+          <li
+            class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+          >
+            <a href="https://github.com/Issa-WebDev"
+              ><img src="icons/github.svg" alt="github icon"
+            /></a>
+          </li>
+          <li
+            class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
+          >
+            <a href="https://www.linkedin.com/in/Issa-WebDev"
+              ><img src="icons/linkedin.svg" alt="linkedin icon"
+            /></a>
+          </li>
+        </ul>
+        <div class="mode">
+          <div
+            id="dark"
+            class="flex items-center justify-center w-[35px] h-[35px] bg-gray-600 rounded-full cursor-pointer overflow-hidden p-3"
+          >
+            <img src="icons/mode.svg" class="w-full" alt="dark icon" />
+          </div>
+          <div
+            id="default"
+            class="hidden items-center justify-center w-[35px] h-[35px] bg-teal-700 rounded-full cursor-pointer overflow-hidden p-3"
+          >
+            <img
+              src="icons/mode.svg"
+              class="w-full"
+              alt="default themes icon"
+            />
+          </div>
+        </div>
+      </div>
     </nav>
     <!-- End Of Navbar -->
 
@@ -60,22 +89,28 @@
           Tailwind CSS to deliver an optimal user experience.
         </p>
         <ul
-          class="flex items-center justify-center px-7 py-2 gap-5 bg-teal-800 rounded-[20px] w-[300px]"
+          class="flex items-center justify-center px-7 py-2 gap-5 bg-teal-800 dark:bg-gray-700 rounded-[20px] w-[300px]"
         >
           <li
             class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
           >
-            <a href="https://twitter.com/Issa_WebDev"><img src="icons/x.svg" alt="x icon" /></a>
+            <a href="https://twitter.com/Issa_WebDev"
+              ><img src="icons/x.svg" alt="x icon"
+            /></a>
           </li>
           <li
             class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
           >
-            <a href="https://github.com/Issa-WebDev"><img src="icons/github.svg" alt="github icon" /></a>
+            <a href="https://github.com/Issa-WebDev"
+              ><img src="icons/github.svg" alt="github icon"
+            /></a>
           </li>
           <li
             class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
           >
-            <a href="https://www.linkedin.com/in/Issa_WebDev"><img src="icons/linkedin.svg" alt="linkedin icon" /></a>
+            <a href="https://www.linkedin.com/in/Issa_WebDev"
+              ><img src="icons/linkedin.svg" alt="linkedin icon"
+            /></a>
           </li>
           <li
             class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
@@ -112,7 +147,7 @@
       <div class="container w-full flex items-center justify-center pt-[70px]">
         <button id="prev" class="btn-control mr-[20px]">&#10094;</button>
         <div
-          class="carousel-container w-[350px] sm:w-[400px] overflow-hidden rounded-[20px] border-[2px] border-gray-200 cursor-pointer shadow-2xl shadow-teal-700"
+          class="carousel-container w-[350px] sm:w-[400px] overflow-hidden rounded-[20px] border-[2px] border-gray-200 cursor-pointer shadow-2xl shadow-teal-700 dark:shadow-gray-700"
         >
           <div
             id="carousel"
@@ -125,7 +160,7 @@
                 alt="cool"
               />
               <div
-                class="info flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)] py-[20px] px-[30px]"
+                class="info flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)] dark:bg-gradient-to-b dark:from-[rgba(0,0,0,0.3)] dark:via-gray-700 dark:to-[rgba(0,0,0,0.3)] py-[20px] px-[30px]"
               >
                 <h1 class="text-[1.3rem] font-bold pb-[20px]">
                   Title Of Projects
@@ -147,7 +182,7 @@
                 alt="cool"
               />
               <div
-                class="info flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)] py-[20px] px-[30px]"
+                class="info flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)] dark:bg-gradient-to-b dark:from-[rgba(0,0,0,0.3)] dark:via-gray-700 dark:to-[rgba(0,0,0,0.3)] py-[20px] px-[30px]"
               >
                 <h1 class="text-[1.3rem] font-bold pb-[20px]">
                   Title Of Projects
@@ -169,7 +204,7 @@
                 alt="cool"
               />
               <div
-                class="info flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)] py-[20px] px-[30px]"
+                class="info flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)] dark:bg-gradient-to-b dark:from-[rgba(0,0,0,0.3)] dark:via-gray-700 dark:to-[rgba(0,0,0,0.3)] py-[20px] px-[30px]"
               >
                 <h1 class="text-[1.3rem] font-bold pb-[20px]">
                   Title Of Projects
@@ -255,7 +290,7 @@
           </div>
           <h1 class="text-left w-full pb-[10px] font-bold">Tailwind CSS</h1>
           <p class="w-full text-[0.9rem]">
-            Rapid developmznt of modern and responsive interface with Tailwind
+            Rapid development of modern and responsive interface with Tailwind
             CSS.
           </p>
         </div>
@@ -283,9 +318,7 @@
       <section
         class="w-full flex flex-col items-center justify-center py-[60px]"
       >
-        <h1 class="text-[2rem] italic font-[600] text-center">
-          Upcomming🔥...
-        </h1>
+        <h1 class="text-[2rem] italic font-[600] text-center">Upcoming🔥...</h1>
         <p
           class="w-[100%px] xl:w-[70%] pt-[30px] text-[0.9rem] md:text-[1rem] leading-7"
         >
@@ -310,26 +343,32 @@
       <p
         class="w-[100%px] xl:w-[70%] pt-[20px] text-[0.9rem] md:text-[1rem] leading-7 pb-[30px]"
       >
-        I'm always open to connecting and chating! Fell free to reach out to me
+        I'm always open to connecting and chating! Feel free to reach out to me
         through any of my social media profiles below.
       </p>
       <ul
-        class="flex items-center justify-center px-7 py-2 gap-5 bg-teal-800 rounded-[20px] w-[300px]"
+        class="flex items-center justify-center px-7 py-2 gap-5 bg-teal-800 dark:bg-gray-700 rounded-[20px] w-[300px]"
       >
         <li
           class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
         >
-          <a href="https://twitter.com/Issa_WebDev"><img src="icons/x.svg" alt="x icon" /></a>
+          <a href="https://twitter.com/Issa_WebDev"
+            ><img src="icons/x.svg" alt="x icon"
+          /></a>
         </li>
         <li
           class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
         >
-          <a href="https://github.com/Issa-WebDev"><img src="icons/github.svg" alt="github icon" /></a>
+          <a href="https://github.com/Issa-WebDev"
+            ><img src="icons/github.svg" alt="github icon"
+          /></a>
         </li>
         <li
           class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
         >
-          <a href="https://www.linkedin.com/in/Issa_WebDev"><img src="icons/linkedin.svg" alt="linkedin icon" /></a>
+          <a href="https://www.linkedin.com/in/Issa_WebDev"
+            ><img src="icons/linkedin.svg" alt="linkedin icon"
+          /></a>
         </li>
         <li
           class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
@@ -341,9 +380,19 @@
       </ul>
 
       <footer class="pt-[50px]">
-        <p class="font-light text-[0.9rem]">Copyright &copy; 2024 | build and designed by Issa-WebDev</p>
+        <p class="font-light text-[0.7rem] md:text-[0.9rem]">
+          Copyright &copy; 2024 | build and designed by Issa-WebDev
+        </p>
       </footer>
     </section>
     <!-- End Of Contact -->
+
+    <!-- Go at the Top -->
+    <div
+      id="toTop"
+      class="fixed opacity-0 right-[2%] lg:right-[14%] bottom-[30px] md:bottom-[50px] w-[35px] h-[35px] bg-teal-600 dark:bg-gray-600 cursor-pointer rounded-md p-3 transition-opacity duration-500 border-e-slate-50"
+    >
+      <img src="icons/up.svg" class="w-full" alt="Top Icon" />
+    </div>
   </body>
 </html>
