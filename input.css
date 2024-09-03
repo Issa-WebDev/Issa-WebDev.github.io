@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --bg-1: teal;
-  --bg-2:  rgb(13, 71, 71);
+  --bg-1: #f4f4f4;
+  --bg-2: gray;
 }
 
 .dark-mode {
   --bg-1: rgb(27, 53, 53);
-  --bg-2: rgb(7, 16, 48);
+  --bg-2: gray;
 }
 
 /* Modification de la largeur du scrollbar */
@@ -39,19 +39,19 @@
 
 @layer components {
   .btn-control {
-    @apply w-[25px] h-[25px] rounded-full bg-teal-500 dark:bg-gray-800 dark:text-white text-black font-bold  flex items-center justify-center;
+    @apply w-[25px] h-[25px] rounded-full dark:bg-gray-400 dark:shadow-md dark:shadow-gray-800 shadow-sm shadow-gray-400 bg-gray-700 text-white font-bold  flex items-center justify-center text-[10px];
   }
 }
 
 @layer components {
   .btn {
-    @apply bg-teal-700 px-[18px] py-[5px] text-white rounded-md hover:bg-teal-800 dark:bg-gray-700 dark:hover:bg-gray-800 transition-colors text-[0.8rem] duration-500 ease-in-out;
+    @apply sm:px-[18px] sm:py-[5px] px-[5px] py-[0px] text-white rounded-md dark:bg-gray-400 dark:shadow-md dark:shadow-gray-800 bg-gray-700 shadow-sm shadow-gray-400 transition-colors text-[0.8rem] duration-500 ease-in-out;
   }
 }
 
 @layer components {
   .cards {
-    @apply flex flex-col items-center justify-center rounded-md bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)]
-    dark:bg-gradient-to-b dark:from-[rgba(0,0,0,0.2)] dark:via-gray-800 dark:to-[rgba(0,0,0,0.2)] border-[1px] border-white p-[20px];
+    @apply flex flex-col items-center justify-center rounded-md
+    bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-gray-800 to-[rgba(0,0,0,0.2)] dark:bg-gradient-to-b dark:from-white dark:via-white dark:to-white dark:shadow-md dark:shadow-gray-700 border-[1px] border-white p-[20px];
   }
 }

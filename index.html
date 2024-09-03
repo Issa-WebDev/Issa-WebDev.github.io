@@ -9,19 +9,19 @@
     <script src="app.js" defer></script>
   </head>
   <body
-    class="bg-gradient-to-l from-teal-900 to-teal-950 dark:bg-gradient-to-l dark:from-gray-900 dark:to-gray-950 text-white font-roboto pb-[50px] min-h-screen"
+    class="bg-gradient-to-l from-gray-900 to-gray-950 dark:bg-gradient-to-l dark:from-white dark:to-white text-white dark:text-black font-roboto pb-[50px] min-h-screen"
   >
     <!-- Start Of Navbar -->
     <nav
       id="nav"
-      class="fixed top-0 right-0 left-0 flex items-center justify-between pt-5 pb-4 px-[10%] lg:px-[20%] bg-gradient-to-l from-teal-900 to-teal-950 dark:bg-gradient-to-l dark:from-gray-900 dark:to-gray-950 z-10"
+      class="fixed top-0 right-0 left-0 flex items-center justify-between pt-5 pb-4 px-[10%] lg:px-[20%] bg-gradient-to-l from-gray-900 to-gray-950 dark:bg-gradient-to-l dark:from-[#fffefe] dark:to-[#fffefe] z-10"
     >
       <div class="md:w-[60px] md:h-[60px] w-[50px] h-[50px]">
-        <img src="logo/issa-WebDev.png" class="w-full" alt="logo" />
+        <img src="logo/issa-WebDev.png" id="logo" class="w-full" alt="logo" />
       </div>
       <div class="flex gap-3 items-center justify-center">
         <ul
-          class="flex items-center justify-center px-7 py-2 gap-5 bg-teal-800 dark:bg-gray-700 rounded-[20px]"
+          class="flex items-center justify-center px-7 py-2 gap-5 dark:bg-gray-400 dark:shadow-md dark:shadow-gray-800 bg-gray-700 rounded-[20px] shadow-sm shadow-gray-400"
         >
           <li
             class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
@@ -48,13 +48,13 @@
         <div class="mode">
           <div
             id="dark"
-            class="flex items-center justify-center w-[35px] h-[35px] bg-gray-600 rounded-full cursor-pointer overflow-hidden p-3"
+            class="flex items-center justify-center w-[35px] h-[35px] bg-white rounded-full cursor-pointer overflow-hidden p-3 mt-1"
           >
             <img src="icons/mode.svg" class="w-full" alt="dark icon" />
           </div>
           <div
             id="default"
-            class="hidden items-center justify-center w-[35px] h-[35px] bg-teal-700 rounded-full cursor-pointer overflow-hidden p-3"
+            class="hidden items-center justify-center w-[35px] h-[35px] bg-gray-900 rounded-full cursor-pointer overflow-hidden p-3 mt-1"
           >
             <img
               src="icons/mode.svg"
@@ -89,7 +89,7 @@
           Tailwind CSS to deliver an optimal user experience.
         </p>
         <ul
-          class="flex items-center justify-center px-7 py-2 gap-5 bg-teal-800 dark:bg-gray-700 rounded-[20px] w-[300px]"
+          class="flex items-center justify-center px-7 py-2 gap-5 dark:bg-gray-400 dark:shadow-md dark:shadow-gray-800 bg-gray-700 rounded-[20px] w-[300px] shadow-sm shadow-gray-400"
         >
           <li
             class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
@@ -147,78 +147,109 @@
       <div class="container w-full flex items-center justify-center pt-[70px]">
         <button id="prev" class="btn-control mr-[20px]">&#10094;</button>
         <div
-          class="carousel-container w-[350px] sm:w-[400px] overflow-hidden rounded-[20px] border-[2px] border-gray-200 cursor-pointer shadow-2xl shadow-teal-700 dark:shadow-gray-700"
+          class="carousel-container w-[400px] overflow-hidden rounded-[20px] border-[2px] dark:border-none border-gray-200 cursor-pointer dark:shadow-xl dark:shadow-gray-700"
         >
           <div
             id="carousel"
             class="flex transition-transform duration-500 ease-in-out"
           >
-            <div class="carousel-item min-w-[100%]">
-              <img
-                src="images/img3.jpg"
-                class="w-full grayscale-[25%]"
-                alt="cool"
-              />
+            <!-- ============================ -->
+            <div class="carousel-item relative min-w-[100%]">
+              <img src="images/img3.jpg" class="w-full blur-sm" alt="cool" />
               <div
-                class="info flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)] dark:bg-gradient-to-b dark:from-[rgba(0,0,0,0.3)] dark:via-gray-700 dark:to-[rgba(0,0,0,0.3)] py-[20px] px-[30px]"
+                class="project-info absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center dark:bg-gradient-to-b dark:from-[rgba(250,250,250,0.4)]  dark:via-white dark:to-[rgba(250,250,250,0.4)]  bg-gradient-to-b from-[rgba(0,0,0,0.3)] via-gray-700 to-[rgba(0,0,0,0.3)] py-sm:[20px] sm:px-[30px] py-[30px] px-[40px]"
               >
-                <h1 class="text-[1.3rem] font-bold pb-[20px]">
-                  Title Of Projects
-                </h1>
-                <p class="text-center text-[0.9rem] font-normal pb-[20px]">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Nihil, reiciendis ad sint laborum provident dolorum Obcaecati?
+                <div class="flex gap-8 pt-[30px] sm:pt-0">
+                  <div class="sm:w-[34px] sm:h-[34px] w-[22px] h-[22px]">
+                    <img src="icons/html.png" class="w-full" alt="html icon" />
+                  </div>
+                  <div class="sm:w-[30px] sm:h-[30px] w-[19px] h-[19px]">
+                    <img src="icons/css.svg" class="w-full" alt="css icon" />
+                  </div>
+                  <div class="sm:w-[32px] sm:h-[32px] w-[19px] h-[19px]">
+                    <img src="icons/js.svg" class="w-full" alt="js icon" />
+                  </div>
+                </div>
+                <p
+                  class="text-center sm:text-[0.9rem] text-[0.7rem] font-normal py-[10px] sm:py-[20px]"
+                >
+                  <span class="sm:text-[1.1rem] text-[0.9rem] font-bold"
+                    >Youtube Clone</span
+                  ><br />
+                  Elit. ipsum dolor sit amet consectetur adipisicing.
                 </p>
-                <div class="flex w-full justify-between py-[10px]">
+                <div
+                  class="flex w-full justify-between sm:py-[10px] pt-0 pb-[40px]"
+                >
                   <a href=""><button class="btn">Visit</button></a>
                   <a href=""><button class="btn">Code</button></a>
                 </div>
               </div>
             </div>
-            <div class="carousel-item min-w-[100%]">
-              <img
-                src="images/img1.jpg"
-                class="w-full grayscale-[25%]"
-                alt="cool"
-              />
+            <!-- ============================ -->
+            <div class="carousel-item relative min-w-[100%]">
+              <img src="images/img2.jpg" class="w-full blur-sm" alt="cool" />
               <div
-                class="info flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)] dark:bg-gradient-to-b dark:from-[rgba(0,0,0,0.3)] dark:via-gray-700 dark:to-[rgba(0,0,0,0.3)] py-[20px] px-[30px]"
+                class="project-info absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center dark:bg-gradient-to-b dark:from-[rgba(250,250,250,0.4)]  dark:via-white dark:to-[rgba(250,250,250,0.4)]  bg-gradient-to-b from-[rgba(0,0,0,0.3)] via-gray-700 to-[rgba(0,0,0,0.3)] py-sm:[20px] sm:px-[30px] py-[30px] px-[40px]"
               >
-                <h1 class="text-[1.3rem] font-bold pb-[20px]">
-                  Title Of Projects
-                </h1>
-                <p class="text-center text-[0.9rem] font-normal pb-[20px]">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Nihil, reiciendis ad sint laborum provident dolorum Obcaecati?
+                <div class="flex gap-8 pt-[30px] sm:pt-0">
+                  <div class="sm:w-[34px] sm:h-[34px] w-[22px] h-[22px]">
+                    <img src="icons/html.png" class="w-full" alt="html icon" />
+                  </div>
+                  <div class="sm:w-[43px] sm:h-[43px] w-[30px] h-[30px]">
+                    <img src="icons/tailwindcss-icon.svg" class="w-full" alt="tailwindcss icon" />
+                  </div>
+                </div>
+                <p
+                  class="text-center sm:text-[0.9rem] text-[0.7rem] font-normal py-[10px] sm:py-[20px]"
+                >
+                  <span class="sm:text-[1.1rem] text-[0.9rem] font-bold"
+                    >Dashboard</span
+                  ><br />
+                  Elit. ipsum dolor sit amet consectetur adipisicing.
                 </p>
-                <div class="flex w-full justify-between py-[10px]">
-                  <a href=""><button class="btn">Open</button></a>
+                <div
+                  class="flex w-full justify-between sm:py-[10px] pt-0 pb-[40px]"
+                >
+                  <a href=""><button class="btn">Visit</button></a>
                   <a href=""><button class="btn">Code</button></a>
                 </div>
               </div>
             </div>
-            <div class="carousel-item min-w-[100%]">
-              <img
-                src="images/img3.jpg"
-                class="w-full grayscale-[25%]"
-                alt="cool"
-              />
+            <!-- ============================ -->
+            <div class="carousel-item relative min-w-[100%]">
+              <img src="images/img1.jpg" class="w-full blur-sm" alt="cool" />
               <div
-                class="info flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-teal-700 to-[rgba(0,0,0,0.2)] dark:bg-gradient-to-b dark:from-[rgba(0,0,0,0.3)] dark:via-gray-700 dark:to-[rgba(0,0,0,0.3)] py-[20px] px-[30px]"
+                class="project-info absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center dark:bg-gradient-to-b dark:from-[rgba(250,250,250,0.4)]  dark:via-white dark:to-[rgba(250,250,250,0.4)]  bg-gradient-to-b from-[rgba(0,0,0,0.3)] via-gray-700 to-[rgba(0,0,0,0.3)] py-sm:[20px] sm:px-[30px] py-[30px] px-[40px]"
               >
-                <h1 class="text-[1.3rem] font-bold pb-[20px]">
-                  Title Of Projects
-                </h1>
-                <p class="text-center text-[0.9rem] font-normal pb-[20px]">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Nihil, reiciendis ad sint laborum provident dolorum Obcaecati?
+                <div class="flex gap-8 pt-[30px] sm:pt-0">
+                  <div class="sm:w-[34px] sm:h-[34px] w-[22px] h-[22px]">
+                    <img src="icons/html.png" class="w-full" alt="html icon" />
+                  </div>
+                  <div class="sm:w-[30px] sm:h-[30px] w-[19px] h-[19px]">
+                    <img src="icons/css.svg" class="w-full" alt="css icon" />
+                  </div>
+                  <div class="sm:w-[32px] sm:h-[32px] w-[19px] h-[19px]">
+                    <img src="icons/js.svg" class="w-full" alt="js icon" />
+                  </div>
+                </div>
+                <p
+                  class="text-center sm:text-[0.9rem] text-[0.7rem] font-normal py-[10px] sm:py-[20px]"
+                >
+                  <span class="sm:text-[1.1rem] text-[0.9rem] font-bold"
+                    >Restaurant website</span
+                  ><br />
+                  Elit. ipsum dolor sit amet consectetur adipisicing.
                 </p>
-                <div class="flex w-full justify-between py-[10px]">
-                  <a href=""><button class="btn">Open</button></a>
+                <div
+                  class="flex w-full justify-between sm:py-[10px] pt-0 pb-[40px]"
+                >
+                  <a href=""><button class="btn">Visit</button></a>
                   <a href=""><button class="btn">Code</button></a>
                 </div>
               </div>
             </div>
+            <!-- ============================ -->
           </div>
         </div>
         <button id="next" class="btn-control ml-[20px]">&#10095;</button>
@@ -236,7 +267,7 @@
         learning.
       </p>
       <div
-        class="skills grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[15px] py-[40px]"
+        class="skills grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] py-[40px]"
       >
         <div class="cards">
           <div>
@@ -304,6 +335,7 @@
             <img
               src="icons/github.svg"
               class="h-[100px] w-full pb-[10px]"
+              id="github-icon"
               alt="github.svg icons"
             />
           </div>
@@ -347,7 +379,7 @@
         through any of my social media profiles below.
       </p>
       <ul
-        class="flex items-center justify-center px-7 py-2 gap-5 bg-teal-800 dark:bg-gray-700 rounded-[20px] w-[300px]"
+        class="flex items-center justify-center px-7 py-2 gap-5 dark:bg-gray-400 dark:shadow-md dark:shadow-gray-800 bg-gray-700 shadow-sm shadow-gray-400 rounded-[20px] w-[300px]"
       >
         <li
           class="w-[22px] h-[22px] hover:scale-110 transition-all duration-500"
@@ -380,7 +412,7 @@
       </ul>
 
       <footer class="pt-[50px]">
-        <p class="font-light text-[0.7rem] md:text-[0.9rem]">
+        <p class="font-light text-[0.7rem] dark:text-black md:text-[0.9rem]">
           Copyright &copy; 2024 | build and designed by Issa-WebDev
         </p>
       </footer>
@@ -390,7 +422,7 @@
     <!-- Go at the Top -->
     <div
       id="toTop"
-      class="fixed opacity-0 right-[2%] lg:right-[14%] bottom-[30px] md:bottom-[50px] w-[35px] h-[35px] bg-teal-600 dark:bg-gray-600 cursor-pointer rounded-md p-3 transition-opacity duration-500 border-e-slate-50"
+      class="fixed opacity-0 right-[2%] lg:right-[14%] bottom-[30px] md:bottom-[50px] w-[35px] h-[35px] cursor-pointer rounded-md p-3 transition-opacity duration-500 dark:bg-gray-400 dark:shadow-md dark:shadow-gray-800 shadow-md shadow-gray-400 bg-gray-700"
     >
       <img src="icons/up.svg" class="w-full" alt="Top Icon" />
     </div>

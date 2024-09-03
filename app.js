@@ -2,6 +2,8 @@
 const darkBtn = document.getElementById("dark");
 const defaultBtn = document.getElementById("default");
 const toTopBtn = document.getElementById("toTop");
+const logo = document.getElementById("logo");
+const githubIcon = document.getElementById("github-icon");
 const htmlElements = document.documentElement;
 
 // ==================  Dark mode  ================================
@@ -11,6 +13,8 @@ darkBtn.addEventListener("click", () => {
   defaultBtn.classList.remove("hidden");
   defaultBtn.classList.add("flex");
   darkBtn.classList.add("hidden");
+  logo.src = "logo/logo-black.png";
+  githubIcon.src = "icons/github-black.svg";
 });
 
 // ==================  Default mode  ================================
@@ -19,6 +23,8 @@ defaultBtn.addEventListener("click", () => {
   htmlElements.classList.remove("dark-mode");
   defaultBtn.classList.add("hidden");
   darkBtn.classList.remove("hidden");
+  logo.src = "logo/issa-WebDev.png";
+  githubIcon.src = "icons/github.svg";
 });
 
 // ================  scroll to top   =================================
@@ -43,6 +49,8 @@ const nextBtn = document.getElementById("next");
 const carousel = document.getElementById("carousel");
 const items = document.querySelectorAll(".carousel-item");
 let currentIndex = 0;
+let startX = 0;
+let endX = 0;
 
 // Go to previous Projects
 prevBtn.addEventListener("click", () => {
@@ -64,3 +72,29 @@ nextBtn.addEventListener("click", () => {
 function ChangeCarousel() {
   carousel.style.transform = `translateX(${-currentIndex * 100}%)`;
 }
+
+// Touch start event
+carousel.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+// Touch move event
+carousel.addEventListener("touchmove", (e) => {
+  endX = e.touches[0].clientX;
+});
+
+// Touch end event
+carousel.addEventListener("touchend", () => {
+  let diffX = startX - endX;
+
+  if (diffX > 50 && currentIndex < items.length - 1) {
+    // Swipe left (next)
+    currentIndex++;
+    ChangeCarousel();
+  } else if (diffX < -50 && currentIndex > 0) {
+    // Swipe right (prev)
+    currentIndex--;
+    ChangeCarousel();
+  }
+});
+
