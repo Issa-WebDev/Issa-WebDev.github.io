@@ -38,20 +38,25 @@
 }
 
 @layer components {
-  .btn-control {
-    @apply w-[25px] h-[25px] rounded-full dark:bg-gray-400 dark:shadow-md dark:shadow-gray-800 shadow-sm shadow-gray-400 bg-gray-700 text-white font-bold  flex items-center justify-center text-[10px];
-  }
-}
-
-@layer components {
   .btn {
-    @apply sm:px-[18px] sm:py-[5px] px-[5px] py-[0px] text-white rounded-md dark:bg-gray-400 dark:shadow-md dark:shadow-gray-800 bg-gray-700 shadow-sm shadow-gray-400 transition-colors text-[0.8rem] duration-500 ease-in-out;
+    @apply px-[18px] py-[5px] text-white dark:bg-gray-400 dark:shadow-md dark:shadow-gray-800 bg-gray-700 shadow-sm shadow-gray-400 transition-colors text-[0.8rem] duration-500 ease-in-out;
   }
 }
 
 @layer components {
   .cards {
-    @apply flex flex-col items-center justify-center rounded-md
+    @apply flex flex-col items-center justify-center
     bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-gray-800 to-[rgba(0,0,0,0.2)] dark:bg-gradient-to-b dark:from-white dark:via-white dark:to-white dark:shadow-md dark:shadow-gray-700 border-[1px] border-white p-[20px];
+  }
+}
+
+@layer base {
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .react-logo {
+    animation: spin 10s linear infinite;
   }
 }
