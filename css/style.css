@@ -466,6 +466,16 @@ video {
   animation: spin 10s linear infinite;
 }
 
+@keyframes pulse {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.pulse {
+  animation: pulse 10s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -689,10 +699,6 @@ video {
   height: 110px;
 }
 
-.h-\[22px\] {
-  height: 22px;
-}
-
 .h-\[35px\] {
   height: 35px;
 }
@@ -729,20 +735,16 @@ video {
   width: 200px;
 }
 
-.w-\[22px\] {
-  width: 22px;
-}
-
-.w-\[300px\] {
-  width: 300px;
-}
-
 .w-\[35px\] {
   width: 35px;
 }
 
 .w-\[45px\] {
   width: 45px;
+}
+
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .w-\[50px\] {
@@ -755,16 +757,6 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
-}
-
-@keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
-.animate-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .cursor-pointer {
@@ -869,11 +861,6 @@ video {
   padding: 20px;
 }
 
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
 .px-\[10\%\] {
   padding-left: 10%;
   padding-right: 10%;
@@ -882,11 +869,6 @@ video {
 .px-\[40px\] {
   padding-left: 40px;
   padding-right: 40px;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .py-\[10px\] {
@@ -902,6 +884,11 @@ video {
 .py-\[40px\] {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.py-\[5px\] {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .py-\[60px\] {
@@ -927,6 +914,10 @@ video {
 
 .pl-\[20px\] {
   padding-left: 20px;
+}
+
+.pl-\[25px\] {
+  padding-left: 25px;
 }
 
 .pt-5 {

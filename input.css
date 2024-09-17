@@ -60,3 +60,14 @@
     animation: spin 10s linear infinite;
   }
 }
+
+@layer base {
+  @keyframes pulse {
+    50% {
+      opacity: 0.3;
+    }
+  }
+  .pulse {
+    animation: pulse 10s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
