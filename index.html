@@ -9,12 +9,12 @@
     <script src="app.js" defer></script>
   </head>
   <body
-    class="bg-gradient-to-l from-gray-900 to-gray-950 dark:bg-gradient-to-l dark:from-white dark:to-white text-white dark:text-black font-roboto pb-[50px] min-h-screen"
+    class="bg-gradient-to-l from-gray-900 to-gray-950 dark:bg-gradient-to-l dark:from-gray-50 dark:to-gray-50 text-white dark:text-black font-roboto pb-[50px] min-h-screen"
   >
     <!-- Start Of Navbar -->
     <nav
       id="nav"
-      class="fixed top-0 right-0 left-0 flex items-center justify-between pt-5 pb-4 px-[10%] lg:px-[20%] bg-gradient-to-l from-gray-900 to-gray-950 dark:bg-gradient-to-l dark:from-[#fffefe] dark:to-[#fffefe] z-10"
+      class="fixed top-0 right-0 left-0 flex items-center justify-between pt-5 pb-4 px-[10%] lg:px-[20%] bg-gradient-to-l from-gray-900 to-gray-950 dark:bg-gradient-to-l dark:from-gray-50 dark:to-gray-50 z-10 dark:border-b dark:border-gray-100"
     >
       <div class="md:w-[60px] md:h-[60px] w-[50px] h-[50px]">
         <img src="logo/issa-WebDev.png" id="logo" class="w-full" />
@@ -118,7 +118,7 @@
 
     <!-- Start Projects Section -->
     <section class="projects-section px-[10%] lg:px-[20%] pt-[60px]">
-      <h1 class="text-[2rem] font-[600] text-right">Projects 👇🏻</h1>
+      <p class="text-[2rem] font-[600] text-right">Projects 👇🏻</p>
       <p
         class="w-[100%] xl:w-[70%] pt-[50px] text-[0.9rem] md:text-[1rem] leading-7"
       >
@@ -288,7 +288,7 @@
 
     <!-- Start Skills Section -->
     <section class="skills-section px-[10%] lg:px-[20%] pt-[100px]">
-      <h1 class="text-[2rem] font-[600] text-left">My Skills 👇🏻</h1>
+      <p class="text-[2rem] font-[600] text-left">My Skills 👇🏻</p>
       <p
         class="w-[100%px] xl:w-[70%] pt-[30px] text-[0.9rem] md:text-[1rem] leading-7"
       >
@@ -302,7 +302,7 @@
           <div>
             <img src="icons/html.png" class="h-[100px] pb-[10px]" />
           </div>
-          <h1 class="text-left w-full pb-[10px] font-bold">HTML</h1>
+          <p class="text-left w-full pb-[10px] font-bold">HTML</p>
           <p class="w-full text-[0.9rem]">
             Creating well-structured and semantic web pages with clean HTML
             code.
@@ -312,7 +312,7 @@
           <div>
             <img src="icons/css.svg" class="h-[100px] pb-[10px]" />
           </div>
-          <h1 class="text-left w-full pb-[10px] font-bold">CSS</h1>
+          <p class="text-left w-full pb-[10px] font-bold">CSS</p>
           <p class="w-full text-[0.9rem]">
             Designing responsive and visually appealing styles with CSS.
           </p>
@@ -321,7 +321,7 @@
           <div>
             <img src="icons/js.svg" class="h-[100px] pb-[10px]" />
           </div>
-          <h1 class="text-left w-full pb-[10px] font-bold">JavaScript</h1>
+          <p class="text-left w-full pb-[10px] font-bold">JavaScript</p>
           <p class="w-full text-[0.9rem]">
             Intermediate skills in JavaScript, Developing dynamic and
             interactive web applications.
@@ -336,7 +336,7 @@
               alt="tailwindcss-icon icons"
             />
           </div>
-          <h1 class="text-left w-full pb-[10px] font-bold">Tailwind CSS</h1>
+          <p class="text-left w-full pb-[10px] font-bold">Tailwind CSS</p>
           <p class="w-full text-[0.9rem]">
             Rapid development of modern and responsive interface with Tailwind
             CSS.
@@ -351,7 +351,7 @@
               id="github-icon"
             />
           </div>
-          <h1 class="text-left w-full pb-[10px] font-bold">Git & Github</h1>
+          <p class="text-left w-full pb-[10px] font-bold">Git & Github</p>
           <p class="w-full text-[0.9rem]">
             Basic knowledge of version control with Git and Github for project
             collaboration.
@@ -362,7 +362,7 @@
       <section
         class="w-full flex flex-col items-center justify-center py-[60px]"
       >
-        <h1 class="text-[2rem] italic font-[600] text-center">Upcoming🔥...</h1>
+        <p class="text-[2rem] italic font-[600] text-center">Upcoming🔥...</p>
         <p
           class="w-[100%px] xl:w-[70%] pt-[30px] text-[0.9rem] md:text-[1rem] leading-7"
         >
@@ -379,7 +379,7 @@
 
     <!-- Start Of Contact -->
     <section class="px-[10%] lg:px-[20%]">
-      <h1 class="text-[1.7rem] font-[600]">Join me 👇🏻</h1>
+      <p class="text-[1.7rem] font-[600]">Join me 👇🏻</p>
       <p
         class="w-[100%px] xl:w-[70%] pt-[20px] text-[0.9rem] md:text-[1rem] leading-7 pb-[30px]"
       >
@@ -411,6 +411,14 @@
         </li>
       </ul>
 
+      <!-- Go to top -->
+      <div
+        id="toTop"
+        class="fixed opacity-0 right-[2%] lg:right-[14%] bottom-[30px] md:bottom-[50px] w-[35px] h-[35px] cursor-pointer p-3 transition-opacity duration-500 dark:bg-gray-600 bg-gray-700"
+      >
+        <img src="icons/arrow-up-solid.svg" class="w-full" alt="Top Icon" />
+      </div>
+
       <footer class="pt-[50px]">
         <p class="font-light text-[0.7rem] dark:text-black md:text-[0.9rem]">
           Copyright &copy; 2024 | build and designed by Issa-WebDev
@@ -418,13 +426,5 @@
       </footer>
     </section>
     <!-- End Of Contact -->
-
-    <!-- Go at the Top -->
-    <div
-      id="toTop"
-      class="fixed opacity-0 right-[2%] lg:right-[14%] bottom-[30px] md:bottom-[50px] w-[35px] h-[35px] cursor-pointer p-3 transition-opacity duration-500 dark:bg-gray-400 dark:shadow-md dark:shadow-gray-800 shadow-md shadow-gray-400 bg-gray-700"
-    >
-      <img src="icons/arrow-up-solid.svg" class="w-full" alt="Top Icon" />
-    </div>
   </body>
 </html>

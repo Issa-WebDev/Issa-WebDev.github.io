@@ -39,14 +39,14 @@
 
 @layer components {
   .btn {
-    @apply px-[18px] py-[5px] text-white dark:bg-gray-400 dark:shadow-md dark:shadow-gray-800 bg-gray-700 shadow-sm shadow-gray-400 transition-colors text-[0.8rem] duration-500 ease-in-out;
+    @apply px-[18px] py-[5px] text-white dark:bg-gray-500 bg-gray-700 transition-colors text-[0.8rem] duration-500 ease-in-out;
   }
 }
 
 @layer components {
   .cards {
     @apply flex flex-col items-center justify-center
-    bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-gray-800 to-[rgba(0,0,0,0.2)] dark:bg-gradient-to-b dark:from-white dark:via-white dark:to-white dark:shadow-md dark:shadow-gray-700 border-[1px] border-white p-[20px];
+    bg-gradient-to-b from-[rgba(0,0,0,0.2)] via-gray-800 to-[rgba(0,0,0,0.2)] dark:bg-gradient-to-b dark:from-gray-50 dark:via-gray-50 dark:to-gray-50 dark:shadow-md dark:shadow-gray-700 border-[1px] border-white p-[20px];
   }
 }
 
@@ -64,10 +64,10 @@
 @layer base {
   @keyframes pulse {
     50% {
-      opacity: 0.3;
+      opacity: 0.4;
     }
   }
   .pulse {
-    animation: pulse 10s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
 }
